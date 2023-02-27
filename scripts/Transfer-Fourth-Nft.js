@@ -13,7 +13,7 @@ async function main() {
 
     const nft = await ethers.getContractAt("ERC721", NftAddress, deployer)
 
-    console.log("Got the contract pointer sucessfully")
+    console.log("Got the contract pointer successfully")
 
     const nftApprove = await nft.approve(receiptAddress, tokenId)
     await nftApprove.wait(1)

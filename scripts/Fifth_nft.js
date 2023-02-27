@@ -3,7 +3,11 @@ const { getNamedAccounts, ethers } = require("hardhat")
 async function main() {
     const { deployer } = await getNamedAccounts()
 
-    const deployedArbitrumContract = "0xd3a0A52872DFfc8482Ed8a56382e8114Dd08FF1e" // contract that I deployed with getOwner() one() and two()
+    const deployedArbitrumContract = "0x75a77a0624Deb50601cB0e929BDA93f54FC6068e" // contract that I deployed with getOwner() one() and two()
+    //const selectorOne = "0x901717d1"
+    const selectorOne = "0x23dc111d"
+
+    console.log("1")
 
     const courseCompletedNft = await ethers.getContractAt(
         "CourseCompletedNFT",
@@ -11,7 +15,12 @@ async function main() {
         deployer
     )
 
-    const mint = await courseCompletedNft.mintNft(deployedArbitrumContract, "0x901717d1")
+    console.log("2")
+
+    const mint = await courseCompletedNft.mintNft(deployedArbitrumContract, selectorOne)
+
+    console.log("3")
+
     await mint.wait(1)
 
     console.log(`Token Minted with the token Id: ${mint.toString()}`)

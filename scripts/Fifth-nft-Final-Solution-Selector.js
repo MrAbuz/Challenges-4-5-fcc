@@ -7,14 +7,6 @@ async function main() {
 
     console.log(`Answer for selector one is: ${answerOne}`)
     console.log(`Answer for selector two is: ${answerTwo}`)
-
-    const solution = await ethers.getContract("solution")
-    const solutionAnswer = await solution.getOwner()
-    if (solutionAnswer.toString() == 0xde735ef9fe1db366016e26dca9d9edf915f17d78) {
-        console.log(true)
-    } else {
-        console.log(false)
-    }
 }
 
 main()

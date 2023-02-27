@@ -13,4 +13,6 @@ Challenge 5: Final NFT
 Answer for selector one is: 0x901717d1
 Answer for selector two is: 0x5fdf05d7
 
-Deploying "solution" (tx: 0xfcf00e456d4869790d3720de742ce45674fb2c01666f219dcf9214c83742bb7a)...: deployed at 0xd3a0A52872DFfc8482Ed8a56382e8114Dd08FF1e with 1977311 gas
+Deploying "FinalSolution" (tx: 0xa196ef653c9cadaf46f9d04439d878cf6f0b30795928ded2ba8009ff29a89a63)...: deployed at 0xCF20bfC854e47C117f0d9c54FC5110A0bD406849 with 2673463 gas
+Final Solution Contract Deployed!
+
